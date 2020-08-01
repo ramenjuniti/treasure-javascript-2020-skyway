@@ -29,7 +29,7 @@
         mediaConnection.on('stream', stream => {
             const videoElement = document.getElementById('their-video');
             videoElement.srcObject = stream;
-            videoElement.Play();
+            videoElement.play();
         })
     }
 
