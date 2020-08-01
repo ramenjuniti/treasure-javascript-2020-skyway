@@ -34,6 +34,7 @@
     }
 
     peer.on('open', () => {
-        document.getElementById('my-id').textContent = peer.id;
+        mediaConnection.answer(localStream);
+        setEventListener(mediaConnection);
     });
 })();
