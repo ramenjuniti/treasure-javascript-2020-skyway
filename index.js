@@ -33,7 +33,7 @@
         })
     }
 
-    peer.on('open', mediaConnection => {
+    peer.on('call', mediaConnection => {
         mediaConnection.answer(localStream);
         setEventListener(mediaConnection);
     });
